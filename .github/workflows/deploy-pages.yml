@@ -3,7 +3,7 @@ name: Deploy Agent Suites to GitHub Pages
 on:
   push:
     branches:
-      - feature/agents-suite
+      - feature/technical-simulation
     paths:
       - 'agents_suites.html'
       - 'agent-suites/**'
