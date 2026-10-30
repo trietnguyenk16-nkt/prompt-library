@@ -1,6 +1,6 @@
 # Playwright Test Agent Suite
 
-A complete GitHub Copilot agent package for repository-aware Playwright testing. It combines one primary agent, five focused skills, a tools contract, optional Playwright MCP guidance, references and a repository-update prompt.
+A complete GitHub Copilot package for repository-aware Playwright testing. The installable package contains one custom agent, five focused skills, and one repository instruction file.
 
 ## What it does
 
@@ -22,7 +22,15 @@ Copy each skill directory to:
 .github/skills/<skill-name>/SKILL.md
 ```
 
-The optional reference, prompt and MCP files can live in:
+Copy the Playwright instruction file to:
+
+```text
+.github/instructions/playwright-test.instructions.md
+```
+
+The repository also contains supporting design notes and optional guidance, but the catalog's individual downloads and ZIP include only the Agent, Skills, and Instructions above.
+
+Supporting files can live in:
 
 ```text
 .github/agent-suites/playwright-test-agents/
@@ -50,9 +58,7 @@ Configure an approved Playwright MCP server through the host's supported MCP con
 
 - `agents/` — primary Copilot custom agent profile.
 - `skills/` — exploration, repository analysis, test design, implementation and validation playbooks.
-- `tools/` — permission and safety contract.
-- `mcp/` — optional browser MCP setup and routing guidance.
-- `references/` — reference policy.
-- `prompts/` — repository adaptation prompt.
+- `instructions/` — always-on Playwright test authoring and maintenance guidance.
+- `tools/`, `mcp/`, `references/`, and `prompts/` — supporting material kept outside the public three-resource download scope.
 
 This suite is a static package. It does not contain a backend, credentials, test data or a guarantee that a particular host has any listed tool or MCP server.
