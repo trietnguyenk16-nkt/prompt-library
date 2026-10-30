@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "suites": [
+    {
+      "id": "playwright-test-agents",
+      "name": "Playwright Test Agent",
+      "version": "1.0.0",
+      "category": "Web testing",
+      "summary": "A repository-aware GitHub Copilot agent for exploring web applications, designing test cases, implementing Playwright tests, and maintaining test suites.",
+      "suiteFile": "agent-suites/playwright-test-agents/suite.json",
+      "agentPath": "agent-suites/playwright-test-agents/agents/playwright-test-agent.agent.md",
+      "tags": ["Playwright", "E2E", "exploration", "test automation", "GitHub Copilot"],
+      "capabilities": ["Explore applications", "Explore repositories", "Generate test cases", "Implement Playwright tests", "Validate and maintain tests"]
+    }
+  ]
+}
