@@ -34,7 +34,8 @@ window.AGENT_SUITES = {
         "agent": ".github/agents/playwright-test-agent.agent.md",
         "skills": ".github/skills/<skill-name>/SKILL.md",
         "references": ".github/agent-suites/playwright-test-agents/references/",
-        "mcp": ".vscode/mcp.json or the host MCP configuration"
+        "mcp": ".vscode/mcp.json or the host MCP configuration",
+        "instructions": ".github/instructions/playwright-test.instructions.md"
       },
       "files": [
         {
@@ -42,6 +43,12 @@ window.AGENT_SUITES = {
           "label": "Playwright Test Agent",
           "type": "agent",
           "description": "Primary orchestrator and implementation agent profile."
+        },
+        {
+          "path": "instructions/playwright-test.instructions.md",
+          "label": "Playwright Test Instructions",
+          "type": "instruction",
+          "description": "Repository-aware instructions for stable Playwright test authoring and maintenance."
         },
         {
           "path": "skills/playwright-exploration/SKILL.md",
